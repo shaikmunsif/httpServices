@@ -3,3 +3,7 @@
 <ul *ngFor="let user of users">
     {{user.name}}
 </ul>
+
+<div *ngIf="apiErrorMessage == null">
+    {{apiErrorMessage}}
+</div>
