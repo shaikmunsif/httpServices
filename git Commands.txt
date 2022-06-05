@@ -5,3 +5,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/shaikmunsif/httpServices.git
 git push -u origin main
+
+//braches
+git checkout -b http_Get main
+git push origin http_Get
