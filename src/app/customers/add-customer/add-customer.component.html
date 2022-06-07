@@ -1,0 +1,45 @@
+<form #addCustomerForm="ngForm">
+    <div class="firstName">
+        <input type="text" name="firstName" [(ngModel)]="firstName" placeholder="Enter First Name">
+    </div>
+    <div class="terms">
+        <input type="checkbox" name="terms" [(ngModel)]="terms"> Terms and Conditions
+    </div>
+    <div class="customerType">
+        <select name="customerType" [(ngModel)]="customerType">
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+        </select>
+    </div>
+    <div class="description">
+        <textarea name="description" [(ngModel)]="description" cols="30" rows="10"></textarea>
+    </div>
+    <div class="buttons">
+        <div class="submitButton">
+            <button (click)="addCustomer(addCustomerForm.value)">Submit</button>
+        </div>
+        <div class="resetButton">
+            <button (click)="resetForm(addCustomerForm)">
+                Reset
+            </button>
+        </div>
+    </div>
+</form>
+
+<div class="posthttp" style="margin-top: 40px;">
+    <form #addcustomerForm2 = "ngForm">
+        <div class="title">
+            <input type="text" [(ngModel)]="title" name="title" placeholder="Enter Title">
+        </div>
+        <div class="body">
+            <textarea name="description"  cols="30" rows="10" [(ngModel)]="description"></textarea>
+        </div>
+        <div class="buttons">
+            <div class="submitButton">
+                <button (click)="addCustomerEx2(addcustomerForm2.value)">
+                    Add
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

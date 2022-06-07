@@ -11,4 +11,8 @@ export class UserServiceService {
    // console.log(this.http.get("https://jsonplaceholder.typicode.com/users"));
    return this.http.get("https://jsonplaceholder.typicode.com/users");
   }
+
+  addCustomer(data:any){
+   return this.http.post("https://jsonplaceholder.typicode.com/users",data);
+  }
 }

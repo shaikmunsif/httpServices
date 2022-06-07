@@ -9,3 +9,5 @@ git push -u origin main
 //braches
 git checkout -b http_Get main
 git push origin http_Get 
+
+get merge "brach name in which it has to be merged"
